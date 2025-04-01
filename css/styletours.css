@@ -1,0 +1,245 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background-color: #e8f5e9; /* Light green background */
+    color: #2e7d32; /* Dark green text */
+    line-height: 1.6;
+}
+
+/* Container styling */
+.container {
+    max-width: 960px;
+    margin: 40px auto;
+    padding: 0;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+/* Header styling */
+.tour-header {
+    position: relative;
+    text-align: center;
+    background: #f1f8e9; /* Light green */
+    padding: 20px;
+}
+
+.tour-header .header-image {
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+    border-bottom: 4px solid #4caf50; /* Medium green border */
+}
+
+.tour-header h1 {
+    font-size: 2.5em;
+    color: #1b5e20; /* Deep green */
+    margin: 20px 0;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+/* Back link styling */
+.back-link {
+    display: inline-block;
+    margin: 20px;
+    padding: 10px 20px;
+    background-color: #388e3c; /* Green button */
+    color: #fff;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.back-link:hover {
+    background-color: #66bb6a; /* Lighter green */
+    transform: translateY(-2px);
+}
+
+/* Tour content section */
+.tour-content {
+    padding: 20px;
+}
+
+/* Tour list styling */
+.tour-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+/* Individual tour card */
+.tour {
+    background: #f1f8e9; /* Very light green */
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #c8e6c9; /* Light green border */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tour:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* Tour title */
+.tour h2 {
+    font-size: 1.8em;
+    color: #388e3c; /* Green title */
+    margin-bottom: 15px;
+    border-bottom: 2px solid #81c784; /* Medium green underline */
+    padding-bottom: 5px;
+}
+
+/* Paragraph styling */
+.tour p {
+    font-size: 1em;
+    margin: 10px 0;
+    color: #33691e; /* Darker green text */
+}
+
+.tour p strong {
+    color: #1b5e20; /* Deep green labels */
+    font-weight: 600;
+}
+
+/* Enquiry button */
+.enquiry-button {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #4caf50; /* Medium green */
+    color: #fff;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.enquiry-button:hover {
+    background-color: #66bb6a; /* Lighter green */
+    transform: scale(1.05);
+}
+
+/* No tours message */
+.no-tours {
+    font-size: 1.2em;
+    color: #558b2f; /* Medium green */
+    text-align: center;
+    padding: 20px;
+}
+
+/* Enquiry content section */
+.enquiry-content {
+    padding: 20px;
+}
+
+.success-message {
+    font-size: 1.2em;
+    color: #388e3c; /* Green success */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.error-message {
+    font-size: 1.2em;
+    color: #d32f2f; /* Red error */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Enquiry form styling */
+.enquiry-form {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.enquiry-form label {
+    font-size: 1.1em;
+    color: #1b5e20; /* Deep green */
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.enquiry-form input,
+.enquiry-form textarea,
+.enquiry-form select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #c8e6c9;
+    border-radius: 6px;
+    font-size: 1em;
+    color: #33691e;
+    background-color: #f1f8e9;
+    transition: border-color 0.3s ease;
+}
+
+.enquiry-form input:focus,
+.enquiry-form textarea:focus,
+.enquiry-form select:focus {
+    border-color: #81c784;
+    outline: none;
+}
+
+.enquiry-form input:disabled {
+    background-color: #e0e0e0;
+    color: #555;
+}
+
+.enquiry-form textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+.submit-button {
+    padding: 12px 25px;
+    background-color: #388e3c; /* Green button */
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.submit-button:hover {
+    background-color: #66bb6a; /* Lighter green */
+    transform: scale(1.05);
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    .container {
+        margin: 20px;
+    }
+
+    .tour-header h1 {
+        font-size: 2em;
+    }
+
+    .tour h2 {
+        font-size: 1.5em;
+    }
+
+    .tour-list {
+        grid-template-columns: 1fr;
+    }
+
+    .tour-header .header-image {
+        max-height: 200px;
+    }
+}
