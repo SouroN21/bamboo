@@ -32,7 +32,7 @@ if ($destination) {
         <!-- Header with destination image -->
         <header class="tour-header">
             <?php if ($destination && $destination['des_image']): ?>
-                <img src="<?php echo htmlspecialchars($destination['des_image']); ?>" alt="<?php echo htmlspecialchars($destination['des_name']); ?>" class="header-image">
+                <img src=".<?php echo htmlspecialchars($destination['des_image']); ?>" alt="<?php echo htmlspecialchars($destination['des_name']); ?>" class="header-image">
             <?php endif; ?>
             <h1>Tours for <?php echo $destination ? htmlspecialchars($destination['des_name']) : 'Unknown Destination'; ?></h1>
         </header>

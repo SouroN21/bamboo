@@ -27,8 +27,13 @@ $destinations = $stmt->fetchAll(PDO::FETCH_ASSOC);
         </div>
     </header>
 
-    <!-- Hero Section -->
+    <!-- Hero Section with Slideshow -->
     <section class="hero">
+        <div class="slideshow">
+            <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1545569341-9eb8b30979d9?q=80&w=2070&auto=format&fit=crop');"></div>
+            <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1490077476659-095159692ab5?q=80&w=2011&auto=format&fit=crop');"></div>
+            <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1518546305927-5a555bb7020d?q=80&w=2069&auto=format&fit=crop');"></div>
+        </div>
         <div class="hero-content">
             <h2>Tailor-Made Tours to Asia</h2>
             <p>Explore the wonders of Asia with bespoke travel experiences crafted just for you.</p>
@@ -65,7 +70,7 @@ $destinations = $stmt->fetchAll(PDO::FETCH_ASSOC);
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <p>&copy; <?php echo date('Y'); ?> Bamboo Travel. All rights reserved.</p>
+            <p>© <?php echo date('Y'); ?> Bamboo Travel. All rights reserved.</p>
             <p>Email: <a href="mailto:info@bambootravel.co.uk">info@bambootravel.co.uk</a> | Phone: 020 7720 9285</p>
         </div>
     </footer>
